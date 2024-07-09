@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex demo</title>
+    <style>
+      .container {
+        width: 700px;
+        background-color: chocolate (100, 100, 100);
+        display: flex;
+        flex-direction: column; /*default*/
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        /*align-items: space-around;*/
+        color: black;
+        border: 3px solid peru;
+        height: 700px;
+        padding: 5px;
+      }
+      .container > div {
+        width: 200px;
+        height: 150px;
+        padding: 5px;
+        background-color: deeppink;
+        border-width: 3px;
+        border-style: solid;
+        border-color: aqua;
+      }
+      .container > div:nth-child(2) {
+        background-color: blueviolet;
+        width: 300px;
+        color: bisque;
+        /*justify-self:  flex-end;*/
+        align-self: flex-end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div><h1>Heading 1</h1></div>
+      <div><h1>Heading 2</h1></div>
+      <div><h1>Heading 3</h1></div>
+    </div>
+  </body>
+</html>
